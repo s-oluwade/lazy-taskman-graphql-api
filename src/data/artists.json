@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "external_url": "https://open.spotify.com/artist/1496XxkytEk26FUJLfpVZr",
+    "href": "https://api.spotify.com/v1/artists/1496XxkytEk26FUJLfpVZr",
+    "spotify_id": "1496XxkytEk26FUJLfpVZr",
+    "name": "CloZee"
+  },
+  {
+    "id": 2,
+    "external_url": "https://open.spotify.com/artist/5VfsJtcTOUghb9eRPpif27",
+    "href": "https://api.spotify.com/v1/artists/5VfsJtcTOUghb9eRPpif27",
+    "spotify_id": "5VfsJtcTOUghb9eRPpif27",
+    "name": "Ennja"
+  },
+  {
+    "id": 3,
+    "external_url": "https://open.spotify.com/artist/7ks4LdnBvp6HUsmVJiKgsB",
+    "href": "https://api.spotify.com/v1/artists/7ks4LdnBvp6HUsmVJiKgsB",
+    "spotify_id": "7ks4LdnBvp6HUsmVJiKgsB",
+    "name": "Skeler"
+  },
+  {
+    "id": 4,
+    "external_url": "https://open.spotify.com/artist/4F4w1Gkfja6wPJzuMKCLmk",
+    "href": "https://api.spotify.com/v1/artists/4F4w1Gkfja6wPJzuMKCLmk",
+    "spotify_id": "4F4w1Gkfja6wPJzuMKCLmk",
+    "name": "Noah B"
+  },
+  {
+    "id": 5,
+    "external_url": "https://open.spotify.com/artist/5JQljNQvDpk1hhKpJHpwNU",
+    "href": "https://api.spotify.com/v1/artists/5JQljNQvDpk1hhKpJHpwNU",
+    "spotify_id": "5JQljNQvDpk1hhKpJHpwNU",
+    "name": "Klimeks"
+  },
+  {
+    "id": 6,
+    "external_url": "https://open.spotify.com/artist/2YXVRXrYHVJrC5P1eTGYSu",
+    "href": "https://api.spotify.com/v1/artists/2YXVRXrYHVJrC5P1eTGYSu",
+    "spotify_id": "2YXVRXrYHVJrC5P1eTGYSu",
+    "name": "Aekae"
+  },
+  {
+    "id": 7,
+    "external_url": "https://open.spotify.com/artist/6RAjggwom3h4d1CTM4zojc",
+    "href": "https://api.spotify.com/v1/artists/6RAjggwom3h4d1CTM4zojc",
+    "spotify_id": "6RAjggwom3h4d1CTM4zojc",
+    "name": "Rautu"
+  },
+  {
+    "id": 8,
+    "external_url": "https://open.spotify.com/artist/3wF9SXMmYh6VkJYd357pjH",
+    "href": "https://api.spotify.com/v1/artists/3wF9SXMmYh6VkJYd357pjH",
+    "spotify_id": "3wF9SXMmYh6VkJYd357pjH",
+    "name": "Nastya Kazantseva"
+  },
+  {
+    "id": 9,
+    "external_url": "https://open.spotify.com/artist/6ORJGSfnPFkJFFs5wXEClO",
+    "href": "https://api.spotify.com/v1/artists/6ORJGSfnPFkJFFs5wXEClO",
+    "spotify_id": "6ORJGSfnPFkJFFs5wXEClO",
+    "name": "skyfall beats"
+  }
+]

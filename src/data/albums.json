@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Microworlds",
+    "artist": "CloZee",
+    "artist_id": 1,
+    "href": "https://api.spotify.com/v1/albums/1OrVf4ejXLTMfWUiXtXU3C",
+    "spotify_id": "1OrVf4ejXLTMfWUiXtXU3C",
+    "release_date": "2023-07-21",
+    "total_tracks": 12
+  },
+  {
+    "name": "Duality",
+    "artist": "Ennja",
+    "artist_id": 2,
+    "href": "https://api.spotify.com/v1/albums/1DFSDbGbMV38jWlcn1VcTJ",
+    "spotify_id": "1DFSDbGbMV38jWlcn1VcTJ",
+    "release_date": "2021-12-24",
+    "total_tracks": 10
+  },
+  {
+    "name": "No Words (Instrumentals Pt. 1)",
+    "artist": "Skeler",
+    "artist_id": 3,
+    "href": "https://api.spotify.com/v1/albums/2GpCp4A6EBmKggyE396aY3",
+    "spotify_id": "2GpCp4A6EBmKggyE396aY3",
+    "release_date": "2023-08-04",
+    "total_tracks": 7
+  },
+  {
+    "name": "South Hills",
+    "artist": "Noah B",
+    "artist_id": 4,
+    "href": "https://api.spotify.com/v1/albums/4FyBJF9NNfO9Irl0kD1XsV",
+    "spotify_id": "4FyBJF9NNfO9Irl0kD1XsV",
+    "release_date": "2018-06-27",
+    "total_tracks": 14
+  },
+  {
+    "name": "Scorpio",
+    "artist": "Klimeks",
+    "artist_id": 5,
+    "href": "https://api.spotify.com/v1/albums/78JGOykSq6tI0qSFBnnT9v",
+    "spotify_id": "78JGOykSq6tI0qSFBnnT9v",
+    "release_date": "2022-11-27",
+    "total_tracks": 4
+  },
+  {
+    "name": "Ether",
+    "artist": "Aekae",
+    "artist_id": 6,
+    "href": "https://api.spotify.com/v1/albums/5itMlJ1lyYoazsBdrxetoe",
+    "spotify_id": "5itMlJ1lyYoazsBdrxetoe",
+    "release_date": "2023-07-21",
+    "total_tracks": 1
+  },
+  {
+    "name": "Covert",
+    "artist": "Aekae",
+    "artist_id": 6,
+    "href": "https://api.spotify.com/v1/albums/2vYNax2J8NH48wkUFkU5aE",
+    "spotify_id": "2vYNax2J8NH48wkUFkU5aE",
+    "release_date": "2023-06-15",
+    "total_tracks": 1
+  },
+  {
+    "name": "Arcane",
+    "artist": "Aekae",
+    "artist_id": 6,
+    "href": "https://api.spotify.com/v1/albums/7F0RDEYUKydDToV1vCB21s",
+    "spotify_id": "7F0RDEYUKydDToV1vCB21s",
+    "release_date": "2023-05-19",
+    "total_tracks": 1
+  },
+  {
+    "name": "Archangel",
+    "artist": "Aekae",
+    "artist_id": 6,
+    "href": "https://api.spotify.com/v1/albums/1KPwbdEdvuQEoLL7Zw5D33",
+    "spotify_id": "1KPwbdEdvuQEoLL7Zw5D33",
+    "release_date": "2023-01-27",
+    "total_tracks": 1
+  },
+  {
+    "name": "Cybersymphony",
+    "artist": "Rautu",
+    "artist_id": 7,
+    "href": "https://api.spotify.com/v1/albums/2kZOVA4tPLbDjdslT8nMFV",
+    "spotify_id": "2kZOVA4tPLbDjdslT8nMFV",
+    "release_date": "2023-08-09",
+    "total_tracks": 10
+  },
+  {
+    "name": "Serene Morning",
+    "artist": "Nastya Kazantseva",
+    "artist_id": 8,
+    "href": "https://api.spotify.com/v1/albums/5js66DxfLmriAqK94R6yt5",
+    "spotify_id": "5js66DxfLmriAqK94R6yt5",
+    "release_date": "2021-04-13",
+    "total_tracks": 1
+  },
+  {
+    "name": "Freedom",
+    "artist": "Nastya Kazantseva",
+    "artist_id": 8,
+    "href": "https://api.spotify.com/v1/albums/4DGVlxfUW64EcSPXXDaw73",
+    "spotify_id": "4DGVlxfUW64EcSPXXDaw73",
+    "release_date": "2021-03-08",
+    "total_tracks": 1
+  },
+  {
+    "name": "Midnight",
+    "artist": "Nastya Kazantseva",
+    "artist_id": 8,
+    "href": "https://api.spotify.com/v1/albums/6ZMIPSFxLbL2uEReMs20oj",
+    "spotify_id": "6ZMIPSFxLbL2uEReMs20oj",
+    "release_date": "2020-06-16",
+    "total_tracks": 1
+  },
+  {
+    "name": "Self-Isolation",
+    "artist": "Nastya Kazantseva",
+    "artist_id": 8,
+    "href": "https://api.spotify.com/v1/albums/4WSw06tArFHjB1ZoEoKojs",
+    "spotify_id": "4WSw06tArFHjB1ZoEoKojs",
+    "release_date": "2020-04-18",
+    "total_tracks": 1
+  },
+  {
+    "name": "Envision",
+    "artist": "Nastya Kazantseva",
+    "artist_id": 8,
+    "href": "https://api.spotify.com/v1/albums/5Uj3wfa4KQwjhK4XuPQxfs",
+    "spotify_id": "5Uj3wfa4KQwjhK4XuPQxfs",
+    "release_date": "2020-03-26",
+    "total_tracks": 1
+  },
+  {
+    "name": "apogee",
+    "artist": "skyfall beats",
+    "artist_id": 9,
+    "href": "https://api.spotify.com/v1/albums/4agbz1DCkaEqaruPBgYmdZ",
+    "spotify_id": "4agbz1DCkaEqaruPBgYmdZ",
+    "release_date": "2022-08-24",
+    "total_tracks": 8
+  }
+]
