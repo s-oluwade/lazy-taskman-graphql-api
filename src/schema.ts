@@ -2,38 +2,38 @@
 // that together define the "shape" of queries that are executed against
 // your data.
 export const typeDefs = `#graphql
-  type Artist {
-    id: Int
-    name: String!
-    spotify_id: String!
-    href: String
-    external_url: String
-    albums: [Album!]
-  }
-  type Album {
-    id: Int
-    name: String!
-    spotify_id: String!
-    href: String
-    artist_id: Int!
-    release_date: String
-    total_tracks: Int
-    tracks: [Track!]
-    artist: Artist!
-  }
-  type Track {
-    id: Int
-    name: String!
-    album_id: Int!
-    artist_id: Int!
-    spotify_id: String!
-    spotify_artist_id: String
-    spotify_album_id: String
-    external_url: String
-    preview_url: String
-    artist: Artist!
-    album: Album!
-  }
+  # type Artist {
+  #   id: Int
+  #   name: String!
+  #   spotify_id: String!
+  #   href: String
+  #   external_url: String
+  #   albums: [Album!]
+  # }
+  # type Album {
+  #   id: Int
+  #   name: String!
+  #   spotify_id: String!
+  #   href: String
+  #   artist_id: Int!
+  #   release_date: String
+  #   total_tracks: Int
+  #   tracks: [Track!]
+  #   artist: Artist!
+  # }
+  # type Track {
+  #   id: Int
+  #   name: String!
+  #   album_id: Int!
+  #   artist_id: Int!
+  #   spotify_id: String!
+  #   spotify_artist_id: String
+  #   spotify_album_id: String
+  #   external_url: String
+  #   preview_url: String
+  #   artist: Artist!
+  #   album: Album!
+  # }
   type Task {
     id: Int!
     title: String!
@@ -54,19 +54,15 @@ export const typeDefs = `#graphql
     task: Task!
   }
   type Query {
-    # employees: [Employee]
-    # departments: [Department]
-    # employee(id: Int!): Employee
-    # department(id: Int!): Department
-    artists: [Artist]
-    artist(id: Int!): Artist
-    albums: [Album]
-    album(id: Int!): Album
-    tracks: [Track]
-    track(id: Int!): Track
-    tasks: [Task]
+    # artists: [Artist]
+    # artist(id: Int!): Artist
+    # albums: [Album]
+    # album(id: Int!): Album
+    # tracks: [Track]
+    # track(id: Int!): Track
+    tasks: [Task]!
     task(id: Int!): Task
-    subtasks: [Subtask]
+    subtasks(taskId: Int!): [Subtask]!
     subtask(id: Int!): Subtask
   }
   type Mutation {
@@ -74,9 +70,9 @@ export const typeDefs = `#graphql
     deleteTask(id: Int!): [Task]
     updateTask(id: Int!, edits: EditTaskInput!): Task
     addSubtask(subtask: AddSubtaskInput!): Subtask
-    deleteSubtask(id: Int!): Subtask
+    deleteSubtask(id: Int!): [Subtask]
     updateSubtask(id: Int!, edits: EditSubtaskInput!): Subtask
-    reorderSubtasks(taskId: Int!, subtaskId: Int!, newIndex: Int! ): Subtask
+    reorderSubtasks(subtaskId: Int!, newIndex: Int! ): [Subtask]
   }
   input AddTaskInput {
     title: String!

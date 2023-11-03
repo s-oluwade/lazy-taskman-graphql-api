@@ -2,8 +2,6 @@ import {ApolloServer} from '@apollo/server';
 import {makeExecutableSchema} from '@graphql-tools/schema';
 import {startStandaloneServer} from '@apollo/server/standalone';
 import {typeDefs} from './schema.ts';
-import _Employee from './models/Employee.ts';
-import _Department from './models/Department.ts';
 import { resolvers } from './resolvers.ts';
 import 'dotenv/config';
 

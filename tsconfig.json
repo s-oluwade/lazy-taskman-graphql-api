@@ -107,7 +107,7 @@
     "skipLibCheck": true, /* Skip type checking all .d.ts files. */
     "rootDirs": ["src/**/*"],
     "outDir": "dist",
-    "lib": ["es2020"],
+    "lib": ["es2023"],
     "moduleResolution": "node",
     "types": ["node"]
   }
