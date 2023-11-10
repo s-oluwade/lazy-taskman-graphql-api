@@ -3,6 +3,7 @@ import {Model, Sequelize, DataTypes} from 'sequelize';
 export default function _Task(sequelize: Sequelize) {
   class Task extends Model {
     declare id: number;
+    declare tasklistName: string;
     declare title: string;
     declare label: string;
     declare priority: string;
@@ -18,6 +19,10 @@ export default function _Task(sequelize: Sequelize) {
         type: DataTypes.INTEGER.UNSIGNED,
         autoIncrement: true,
         primaryKey: true,
+      },
+      tasklistName: {
+        type: new DataTypes.STRING(128),
+        allowNull: false,
       },
       title: {
         type: new DataTypes.STRING(128),
@@ -57,6 +62,7 @@ export default function _Task(sequelize: Sequelize) {
     }
   );
 
+  // Task.sync({force: false, alter: true});
   Task.sync();
 
   return Task;
