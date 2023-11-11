@@ -3,10 +3,12 @@ import {Sequelize} from 'sequelize';
 import _Task from './models/Task';
 import _Subtask from './models/Subtask';
 import _Tasklist from './models/Tasklist';
+import mysql2 from 'mysql2';
 
 const sequelize = new Sequelize(process.env.MYSQLDATABASE!, process.env.MYSQLUSER!, process.env.MYSQLPASSWORD, {
   host: process.env.MYSQLHOST,
   dialect: 'mysql',
+  dialectModule: mysql2,
   dialectOptions: {
     ssl: {
       rejectUnauthorized: true,
