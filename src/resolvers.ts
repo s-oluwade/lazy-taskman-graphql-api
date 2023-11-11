@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import {Sequelize} from 'sequelize';
-import _Task from './models/Task.ts';
-import _Subtask from './models/Subtask.ts';
-import _Tasklist from './models/Tasklist.ts';
+import _Task from './models/Task';
+import _Subtask from './models/Subtask';
+import _Tasklist from './models/Tasklist';
 
 const sequelize = new Sequelize(process.env.MYSQLDATABASE!, process.env.MYSQLUSER!, process.env.MYSQLPASSWORD, {
   host: process.env.MYSQLHOST,
