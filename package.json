@@ -4,8 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "build": "tsc",
-    "clean": "tsc --build --clean",
+    "build": "npx tsc",
+    "clean": "npx tsc --build --clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
