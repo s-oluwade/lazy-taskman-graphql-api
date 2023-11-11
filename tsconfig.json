@@ -19,7 +19,6 @@
     "outDir": "dist",
     "lib": ["es2023"],
     "moduleResolution": "node",
-    "types": ["node"]
   },
   "include": ["src/**/*"],
 }
