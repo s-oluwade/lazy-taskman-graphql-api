@@ -21,7 +21,8 @@ const server = new ApolloServer({
 server.start().then(() => {
   app.use(
     '/graphql',
-    cors<cors.CorsRequest>({ origin: ['https://lazy-taskman.vercel.app', 'https://studio.apollographql.com'] }),
+    // cors<cors.CorsRequest>({ origin: ['https://lazy-taskman.vercel.app', 'https://studio.apollographql.com'] }),
+    cors<cors.CorsRequest>(),
     express.json(),
     expressMiddleware(server),
   );
