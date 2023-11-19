@@ -11,6 +11,7 @@ export default function _Task(sequelize: Sequelize) {
     declare status: string;
     declare progress: number;
     declare cursor: number;
+    declare animation: string;
   }
 
   Task.init(
@@ -55,6 +56,11 @@ export default function _Task(sequelize: Sequelize) {
         allowNull: false,
         defaultValue: 0,
       },
+      animation: {
+        type: new DataTypes.STRING(128),
+        allowNull: true,
+        defaultValue: 'shooting-stars',
+      },
     },
     {
       tableName: 'Task',
@@ -62,8 +68,8 @@ export default function _Task(sequelize: Sequelize) {
     }
   );
 
-  // Task.sync({force: false, alter: true});
-  Task.sync();
+  Task.sync({force: false, alter: true});
+  // Task.sync();
 
   return Task;
 }

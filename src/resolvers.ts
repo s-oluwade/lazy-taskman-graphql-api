@@ -4,6 +4,7 @@ import _Task from './models/Task';
 import _Subtask from './models/Subtask';
 import _Tasklist from './models/Tasklist';
 import mysql2 from 'mysql2';
+import OpenAI from 'openai';
 
 const sequelize = new Sequelize(process.env.MYSQLDATABASE!, process.env.MYSQLUSER!, process.env.MYSQLPASSWORD, {
   host: process.env.MYSQLHOST,
@@ -129,10 +130,29 @@ export const resolvers = {
         ...args.task,
       });
 
-      await Subtask.create({
-        index: 0,
-        taskId: createdTask.id,
-      });
+      if (!args.autosubtasks) {
+        await Subtask.create({
+          index: 0,
+          taskId: createdTask.id,
+        });
+      } else {
+        const gptSubtasks = await getGPTSubtasks(args.task.title);
+        if (gptSubtasks.content) {
+          gptSubtasks.content.split('\n').forEach(async (subtask: string, index: number) => {
+            const trimmed = subtask.replace(/^\d+. \s*/, '');
+            await Subtask.create({
+              index: index,
+              taskId: createdTask.id,
+              title: trimmed,
+            });
+          });
+        } else {
+          await Subtask.create({
+            index: 0,
+            taskId: createdTask.id,
+          });
+        }
+      }
 
       return createdTask;
     },
@@ -264,3 +284,31 @@ export const resolvers = {
     },
   },
 };
+
+async function getGPTSubtasks(prompt: string) {
+  const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
+
+  const completion = await openai.chat.completions.create({
+    model: 'gpt-3.5-turbo',
+    messages: [
+      {
+        role: 'system',
+        content: 'Respond with only the title for each subtask.',
+      },
+      {
+        role: 'user',
+        content: `Generate subtasks for the following task: \n` + prompt,
+      },
+    ],
+    max_tokens: 100,
+    temperature: 1,
+    presence_penalty: 0,
+    frequency_penalty: 0,
+  });
+
+  const quote = completion.choices[0].message;
+
+  return quote;
+}

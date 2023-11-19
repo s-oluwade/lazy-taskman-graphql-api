@@ -51,6 +51,7 @@ export const typeDefs = `#graphql
     status: String!
     progress: Int!
     cursor: Int!
+    animation: String
     subtasks: [Subtask!]!
   }
   type Subtask {
@@ -75,7 +76,7 @@ export const typeDefs = `#graphql
     createTasklist(tasklist: AddTasklistInput!): Tasklist
     deleteTasklist(id: Int!): [Tasklist]
     updateTasklist(id: Int!, edits: EditTasklistInput!): Tasklist
-    addTask(task: AddTaskInput!): Task
+    addTask(autosubtasks: Boolean!, task: AddTaskInput!): Task
     deleteTask(id: Int!): [Task]
     updateTask(id: Int!, edits: EditTaskInput!): Task
     addSubtask(subtask: AddSubtaskInput!): Subtask
@@ -98,6 +99,7 @@ export const typeDefs = `#graphql
     label: String!
     priority: String!
     dueDate: String
+    animation: String
   }
   input EditTaskInput {
     tasklistName: String
