@@ -68,8 +68,8 @@ export default function _Task(sequelize: Sequelize) {
     }
   );
 
-  Task.sync({force: false, alter: true});
-  // Task.sync();
+  // Task.sync({force: false, alter: true});
+  Task.sync();
 
   return Task;
 }
