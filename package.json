@@ -26,7 +26,8 @@
     "mysql2": "^3.6.3",
     "openai": "^4.17.4",
     "sequelize": "^6.33.0",
-    "sequelize-typescript": "^2.1.5"
+    "sequelize-typescript": "^2.1.5",
+    "typescript": "^5.2.2"
   },
   "keywords": [],
   "author": "",
@@ -34,7 +35,6 @@
   "description": "",
   "devDependencies": {
     "@types/cors": "^2.8.16",
-    "@types/node": "^20.8.2",
-    "typescript": "^5.2.2"
+    "@types/node": "^20.8.2"
   }
 }
