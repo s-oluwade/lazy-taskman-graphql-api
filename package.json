@@ -7,6 +7,10 @@
     "os": false,
     "path": false
   },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "start": "node dist/index.js",
     "build": "npm install && npm install typescript && npx tsc",
