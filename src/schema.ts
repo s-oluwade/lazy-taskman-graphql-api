@@ -2,38 +2,6 @@
 // that together define the "shape" of queries that are executed against
 // your data.
 export const typeDefs = `#graphql
-  # type Artist {
-  #   id: Int
-  #   name: String!
-  #   spotify_id: String!
-  #   href: String
-  #   external_url: String
-  #   albums: [Album!]
-  # }
-  # type Album {
-  #   id: Int
-  #   name: String!
-  #   spotify_id: String!
-  #   href: String
-  #   artist_id: Int!
-  #   release_date: String
-  #   total_tracks: Int
-  #   tracks: [Track!]
-  #   artist: Artist!
-  # }
-  # type Track {
-  #   id: Int
-  #   name: String!
-  #   album_id: Int!
-  #   artist_id: Int!
-  #   spotify_id: String!
-  #   spotify_artist_id: String
-  #   spotify_album_id: String
-  #   external_url: String
-  #   preview_url: String
-  #   artist: Artist!
-  #   album: Album!
-  # }
   type Tasklist {
     id: Int!
     userId: String
@@ -52,7 +20,7 @@ export const typeDefs = `#graphql
     progress: Int!
     cursor: Int!
     animation: String
-    subtasks: [Subtask!]!
+    subtasks: [Subtask]
   }
   type Subtask {
     id: Int!
@@ -79,6 +47,7 @@ export const typeDefs = `#graphql
     addTask(autosubtasks: Boolean!, task: AddTaskInput!): Task
     deleteTask(id: Int!): [Task]
     updateTask(id: Int!, edits: EditTaskInput!): Task
+    createSubtasks(taskId: Int!, auto: Boolean): [Subtask]
     addSubtask(subtask: AddSubtaskInput!): Subtask
     deleteSubtask(id: Int!): [Subtask]
     updateSubtask(id: Int!, edits: EditSubtaskInput!): Subtask
