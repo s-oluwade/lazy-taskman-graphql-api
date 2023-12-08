@@ -27,7 +27,7 @@
     "openai": "^4.17.4",
     "sequelize": "^6.33.0",
     "sequelize-typescript": "^2.1.5",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   },
   "keywords": [],
   "author": "",
